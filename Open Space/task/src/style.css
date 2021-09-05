@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.space{
+    background-image: url("img/space.png");
+    width: 80vh;
+    height: 95vh;
+    position: relative;
+}
+.planet-area{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.planet{
+    position: absolute;
+    width: 250px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.rocket{
+    position: relative;
+    width: 50px;
+    transform: rotate(25deg);
+    bottom: 135px;
+    left: 140px;
+}
+.control-panel__inner{
+    width: 300px;
+    height: 230px;
+    background-color: #4b4b4b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.control-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 150px;
+    width: 320px;
+    height: 250px;
+    background:
+            linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+            linear-gradient(63deg, transparent 74%, #999 78%),
+            linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+            #444;
+    background-size: 16px 48px;
+}
+.check-buttons{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.levers{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+}
+input[type=range]
+{
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    width: 8px;
+    height: 120px;
+    padding: 0 5px;
+}
+input[type=password]{
+    border-radius: 7px;
+    border-color: yellow;
+    background-color: #4b4b4b;
+    color: grey;
+}
+input[value="OK"]{
+    border-radius: 10px;
+    background-color: yellow;
+}
+input[value="launch"]{
+    width: 100px;
+    height: 50px;
+    border-radius: 90%;
+    background-color: darkred;
+    border-color: white;
+    color: white;
+}
